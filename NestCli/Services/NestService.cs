@@ -7,7 +7,7 @@ namespace NestCli.Services
     {
         private static NestService? _instance;
 
-        ElasticClient client;
+        public ElasticClient client { get; }
         public static NestService Instance
         {
             get
